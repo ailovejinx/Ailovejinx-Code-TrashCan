@@ -4,7 +4,7 @@
   @ LastEditors  : Ailovejinx
   @ LastEditTime : 2023-03-28 16:46:43
   @ FilePath     : gen_tracking_label.py
-  @ Description  : 
+  @ Description  : generate labels using for KITTA 3D tracking.
   @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
 """
 import os
