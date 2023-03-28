@@ -1,3 +1,17 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-10 20:53:56
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:35:09
+  @ FilePath     : data_split.py
+  @ Description  : Split ImageSets for different experiments using SMOKE.
+                    A: KITTI
+                    B: KITTI+KITTA
+                    C: KITTA(pretrain)
+                    D: KITTI finetune on C output model.
+
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 #coding:utf-8
 import random
 import os

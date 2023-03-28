@@ -1,3 +1,12 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-28 14:58:10
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:36:24
+  @ FilePath     : 3dbox_to_img.py
+  @ Description  : Use to visualize the 3D Box of KITTI detection dataset.
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt

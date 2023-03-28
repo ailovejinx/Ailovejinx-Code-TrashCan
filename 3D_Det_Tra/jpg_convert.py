@@ -1,3 +1,12 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-28 14:58:10
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:47:40
+  @ FilePath     : jpg_convert.py
+  @ Description  : convert PNG to JPG.
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 from PIL import Image
 import os
 

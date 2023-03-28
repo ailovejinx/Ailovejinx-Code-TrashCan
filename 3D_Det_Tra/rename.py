@@ -1,3 +1,12 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-28 14:09:31
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:48:05
+  @ FilePath     : rename.py
+  @ Description  : rename the images of each sequence from '000000.jpg'
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 import os
 
 root = 'image_02'

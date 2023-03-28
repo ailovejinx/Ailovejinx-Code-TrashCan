@@ -1,3 +1,13 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-28 14:58:10
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:45:47
+  @ FilePath     : form_convert.py
+  @ Description  : Generate KITTA dataset.
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
+
 import os
 import shutil
 # import matplotlib.image as mpimg
@@ -6,10 +16,14 @@ from PIL import Image
 import pandas as pd
 
 
+
 def gen_filename(id, extension):
-    '''
-    generate filename from id
-    '''
+    """
+      @ description: Generate filename from ID and extension.
+      @ param       {*} id: id of image/label/calib, e.g. '000001'
+      @ param       {*} extension: .png/.jpg/.txt etc.
+      @ return      {*} filename: e.g. 000001.txt
+    """
     id = str(id)
     id = id.zfill(6)
     filename = id + extension
@@ -17,10 +31,13 @@ def gen_filename(id, extension):
 
 
 def copyfile_calib(srcfile, dstpath, filename):
-    '''
-    copy srcfile to the dstpath
-    '''
-
+    """
+      @ description: copy calib to the dstpath
+      @ param       {*} srcfile: source file path
+      @ param       {*} dstpath: file copy destination path
+      @ param       {*} filename: copy filename
+      @ return      {*} none
+    """
     if not os.path.isfile(srcfile):
         print("%s not exist!" % (srcfile))
     else:
@@ -32,10 +49,13 @@ def copyfile_calib(srcfile, dstpath, filename):
 
 
 def copyfile_label(srcfile, dstpath, filename):
-    '''
-    copy srcfile to the dstpath
-    '''
-
+    """
+      @ description: copy label to the dstpath
+      @ param       {*} srcfile: source file path
+      @ param       {*} dstpath: file copy destination path
+      @ param       {*} filename: copy filename
+      @ return      {*} none
+    """
     if not os.path.isfile(srcfile):
         print("%s not exist!" % (srcfile))
     else:
@@ -52,6 +72,13 @@ def copyfile_label(srcfile, dstpath, filename):
 
 
 def gen_data(path, extension, dataname):
+    """
+      @ description: generate image/label/calib. if is image, conver 32bit png to 24bit, only drop alpha channel.
+      @ param       {*} path: output path
+      @ param       {*} extension: .txt for calib and label, .png for image
+      @ param       {*} dataname: output dir name, e.g. calib image_2 label_2
+      @ return      {*} none
+    """
     dirs = os.listdir(path)
     count = 0
     # for dir in dirs:

@@ -1,3 +1,12 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-21 10:04:52
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:49:27
+  @ FilePath     : statics.py
+  @ Description  : get dataset characteristics, e.g. the number of target categories, number of frames and so on.
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 import os
 import pandas as pd
 

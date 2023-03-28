@@ -1,3 +1,12 @@
+"""
+  @ Author       : Ailovejinx
+  @ Date         : 2023-03-28 14:58:10
+  @ LastEditors  : Ailovejinx
+  @ LastEditTime : 2023-03-28 16:46:43
+  @ FilePath     : gen_tracking_label.py
+  @ Description  : 
+  @ Copyright (c) 2023 by Ailovejinx, All Rights Reserved. 
+"""
 import os
 import pandas as pd
 
